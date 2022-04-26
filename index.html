@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Dynamic Meme</title>
+
 </head>
+
+<header>
+    <h1 class="Title"> Dynamic Meme</h1>
+        <p1>blah blah blah</p1>
+        <nav>
+
+        </nav>
+</header>
+
 <body>
-    
+    <main>
+        <section class="container">
+            <div class="text-selection-box"></div>
+                <button id="random-btn">Generate Random</button>
+                <h2>Search up a meme</h2>
+                    <input type="text" placeholder="search">
+                    <input type="submit">
+                
+                <div class="preview-image"></div>
+                <h3>Create your own Meme</h3>
+                <input type="text" placeholder="Add your quote">
+                <input type="submit">
+               
+
+                <div id="generated-photos">
+                    <img class src=""width="600" height="300"/>
+                </div>
+
+        </section>
+
+        <section id="generator"></section>
+            <h3>Here is the generated meme.</h3>
+                <img src=""width="600" height="300"/>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
