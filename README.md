@@ -27,12 +27,9 @@ search bar for picture
 maybe:
 jumpscare
 
-
-
-
-
-
-
+// Javascript - Everyone else
+// CSS - Diego / Shogoofa
+// 
 
 
 API's:
