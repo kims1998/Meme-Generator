@@ -1,13 +1,9 @@
 let url = "https://api.imgflip.com/get_memes";
 
 // Variable that will save all 100 images to an array
-<<<<<<< HEAD
-//let images = ;
-=======
 let images;
 let allImages;
 const randomImages = [];
->>>>>>> 1b7912d4112905d80335c2513056813b3d2abd83
 
 fetch(url)
 .then(response =>{
