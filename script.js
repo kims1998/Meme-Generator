@@ -1,51 +1,51 @@
-let url = "https://api.imgflip.com/get_memes";
+// let url = "https://api.imgflip.com/get_memes";
 
-// Variable that will save all 100 images to an array
-let images;
-let allImages;
-const randomImages = [];
+// // Variable that will save all 100 images to an array
+// let images;
+// let allImages;
+// const randomImages = [];
 
-fetch(url)
-.then(response =>{
-    console.log(response.status)
-    return response.json();
-})
-.then(data=>{
-    // Store image objects in an array
-    images = data.data.memes;
-    console.log("images", images)
+// fetch(url)
+// .then(response =>{
+//     console.log(response.status)
+//     return response.json();
+// })
+// .then(data=>{
+//     // Store image objects in an array
+//     images = data.data.memes;
+//     console.log("images", images)
 
-    //let randomImages = [
+//     //let randomImages = [
 
-    for(let i = 0; i < images.length; i++) {
-        randomImages.push(images[i].url);
-    }
+//     for(let i = 0; i < images.length; i++) {
+//         randomImages.push(images[i].url);
+//     }
 
-    getImages(randomImages);
+//     getImages(randomImages);
 
-    // console.log(randomImages)
+//     // console.log(randomImages)
 
-})
-.catch(console.err);
+// })
+// .catch(console.err);
 
-function getImages(attr) {
-    const getImagesIndex = Math.floor(Math.random() * attr.length);
-    console.log(getImagesIndex, "random")
-}
-// console.log(randomImages(), "random")
+// function getImages(attr) {
+//     const getImagesIndex = Math.floor(Math.random() * attr.length);
+//     console.log(getImagesIndex, "random")
+// }
+// // console.log(randomImages(), "random")
 
-var generateBtn = document.querySelector('#generate-btn');
+// var generateBtn = document.querySelector('#generate-btn');
 
-generateBtn.addEventListener('click', function() {
-        getImages(attr);
-})
+// generateBtn.addEventListener('click', function() {
+//         getImages(attr);
+// })
 
 var display = document.querySelector(".test");
 var img = document.querySelector("#myImg");
 
 let key = "PdkNRVt59jQTuyCn6UBmpXpacH1ulMhA";
 let urlMeme =
-  "https://api.giphy.com/v1/gifs/search?api_key=PdkNRVt59jQTuyCn6UBmpXpacH1ulMhA&q=gif&limit=25&offset=0&rating=g&lang=en";
+  "https://api.giphy.com/v1/gifs/search?api_key=PdkNRVt59jQTuyCn6UBmpXpacH1ulMhA&q=gif&limit=100&offset=0&rating=g&lang=en";
 
 fetch(urlMeme)
   .then((response) => {
