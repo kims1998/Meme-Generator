@@ -1,44 +1,39 @@
-// let url = "https://api.imgflip.com/get_memes";
+let url = "https://api.imgflip.com/get_memes";
+// Variable that will save all 100 images to an array
+let allImages;
+let imageDisplay = document.querySelector("#generated-photos");
+let randomize = document.querySelector("#random-btn");
+let getImagesIndex = "";
+let eachContainer = "";
 
-// // Variable that will save all 100 images to an array
-// let images;
-// let allImages;
-// const randomImages = [];
+function randomText() {
 
-// fetch(url)
-// .then(response =>{
-//     console.log(response.status)
-//     return response.json();
-// })
-// .then(data=>{
-//     // Store image objects in an array
-//     images = data.data.memes;
-//     console.log("images", images)
+}
 
-//     //let randomImages = [
+function randomizeImage() {
+  fetch(url)
+    .then((response) => {
+      console.log(response.status);
+      return response.json();
+    })
+    .then((data) => {
+        let getImagesIndex = Math.floor(Math.random() * data.data.memes.length);
+        let randomImage = [];
+        randomImage.push(data.data.memes[getImagesIndex].url);
+        let finalRandomImage = randomImage[0]
+        imageDisplay.innerHTML = `
+        <img src="${finalRandomImage}">
+        `;
+      }
+    )
+    .catch(console.err);
+}
 
-//     for(let i = 0; i < images.length; i++) {
-//         randomImages.push(images[i].url);
-//     }
+randomize.addEventListener("click", function callImage(){
+    randomizeImage()
+    pullingData.push;
+});
 
-//     getImages(randomImages);
-
-//     // console.log(randomImages)
-
-// })
-// .catch(console.err);
-
-// function getImages(attr) {
-//     const getImagesIndex = Math.floor(Math.random() * attr.length);
-//     console.log(getImagesIndex, "random")
-// }
-// // console.log(randomImages(), "random")
-
-// var generateBtn = document.querySelector('#generate-btn');
-
-// generateBtn.addEventListener('click', function() {
-//         getImages(attr);
-// })
 
 var display = document.querySelector(".test");
 var img = document.querySelector("#myImg");
@@ -59,6 +54,8 @@ fetch(urlMeme)
     });
     console.log(data, "data");
 
+    
+
     async function pullData() {
       var final = await fetch(urlMeme);
       console.log(final);
@@ -70,3 +67,4 @@ fetch(urlMeme)
     }
     pullData();
   });
+
