@@ -1,8 +1,6 @@
 let url = "https://api.imgflip.com/get_memes";
 // Variable that will save all 100 images to an array
 let images;
-let allImages;
-const randomImages = [];
 
 fetch(url)
 .then(response =>{
@@ -11,30 +9,10 @@ fetch(url)
 })
 .then(data=>{
     // Store image objects in an array
-    images = data.data.memes;
-    console.log("images", images)
-
-    //let randomImages = [
-
-    for(let i = 0; i < images.length; i++) {
-        randomImages.push(images[i].url);
-    }
-
-    getImages(randomImages);
-
-    // console.log(randomImages)
-
+    images = [data.data.memes];
+    console.log(images)
 })
 .catch(console.err);
-
-function getImages(attr) {
-    const getImagesIndex = Math.floor(Math.random() * attr.length);
-    console.log(getImagesIndex, "random")
-}
-
-// console.log(randomImages(), "random")
-
-
 
 
 let key = "PdkNRVt59jQTuyCn6UBmpXpacH1ulMhA";

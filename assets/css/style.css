@@ -1,0 +1,31 @@
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/Meme-Collage-768x768.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: -5;
+    opacity: 0.8;
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.color-change {
+    background-color: rgb(252, 163, 17) !important;
+    padding: 15px;
+
+}
+.font-size {
+    font-size: 38px;
+}
+
+section {
+    width: 300px;
+  border: 5px solid rgb(252, 163, 17);
+  background-color: rgb(20, 33, 61);
+  padding: 50px;
+  margin: 20px;
+  color: rgb(229, 229, 229);
+}
