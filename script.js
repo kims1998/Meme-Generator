@@ -1,6 +1,7 @@
 let url = "https://api.imgflip.com/get_memes";
+
 // Variable that will save all 100 images to an array
-let images;
+//let images = ;
 
 fetch(url)
 .then(response =>{
