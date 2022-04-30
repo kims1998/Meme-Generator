@@ -6,6 +6,10 @@ let randomize = document.querySelector("#random-btn");
 let getImagesIndex = "";
 let eachContainer = "";
 
+function randomText() {
+
+}
+
 function randomizeImage() {
   fetch(url)
     .then((response) => {
@@ -42,3 +46,4 @@ fetch(urlMeme)
     console.log(data, "hello");
   })
   .catch(console.err);
+
