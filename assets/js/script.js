@@ -1,18 +1,37 @@
 let url = "https://api.imgflip.com/get_memes";
 // Variable that will save all 100 images to an array
-let images;
+let allImages;
+let imageDisplay = document.querySelector("#generated-photos");
+let randomize = document.querySelector("#random-btn");
+let getImagesIndex = "";
+let eachContainer = "";
 
-fetch(url)
-.then(response =>{
-    console.log(response.status)
-    return response.json();
-})
-.then(data=>{
-    // Store image objects in an array
-    images = [data.data.memes];
-    console.log(images)
-})
-.catch(console.err);
+function randomText() {
+
+}
+
+function randomizeImage() {
+  fetch(url)
+    .then((response) => {
+      console.log(response.status);
+      return response.json();
+    })
+    .then((data) => {
+        let getImagesIndex = Math.floor(Math.random() * data.data.memes.length);
+        let randomImage = [];
+        randomImage.push(data.data.memes[getImagesIndex].url);
+        let finalRandomImage = randomImage[0]
+        imageDisplay.innerHTML = `
+        <img src="${finalRandomImage}">
+        `;
+      }
+    )
+    .catch(console.err);
+}
+
+randomize.addEventListener("click", function callImage(){
+    randomizeImage()
+});
 
 
 let key = "PdkNRVt59jQTuyCn6UBmpXpacH1ulMhA";
