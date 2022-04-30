@@ -31,23 +31,27 @@ function getImages(attr) {
     const getImagesIndex = Math.floor(Math.random() * attr.length);
     console.log(getImagesIndex, "random")
 }
-
 // console.log(randomImages(), "random")
 
+var generateBtn = document.querySelector('#generate-btn');
 
-
-
-let key = "PdkNRVt59jQTuyCn6UBmpXpacH1ulMhA";
-let urlMeme = "https://api.giphy.com/v1/gifs/search?api_key=PdkNRVt59jQTuyCn6UBmpXpacH1ulMhA&q=cat&limit=25&offset=0&rating=g&lang=en";
-
-fetch(urlMeme)
-.then(response =>{
-    console.log(response.status)
-    return response.json();
+generateBtn.addEventListener('click', function() {
+        getImages(attr);
 })
-.then(data=>{
-    console.log(data)
-})
-.catch(console.err);
+
+
+
+// let key = "PdkNRVt59jQTuyCn6UBmpXpacH1ulMhA";
+// let urlMeme = "https://api.giphy.com/v1/gifs/search?api_key=PdkNRVt59jQTuyCn6UBmpXpacH1ulMhA&q=cat&limit=25&offset=0&rating=g&lang=en";
+
+// fetch(urlMeme)
+// .then(response =>{
+//     console.log(response.status)
+//     return response.json();
+// })
+// .then(data=>{
+//     console.log(data)
+// })
+// .catch(console.err);
 
 
