@@ -30,8 +30,8 @@ function randomizeImage() {
 }
 
 randomize.addEventListener("click", function callImage(){
-    randomizeImage()
-    pullingData.push;
+  randomizeImage();
+  pullData();
 });
 
 
@@ -53,7 +53,7 @@ fetch(urlMeme)
       display.innerHTML += `<img src=${item.images.original.url}/><br>`;
     });
     console.log(data, "data");
-
+  });
     
 
     async function pullData() {
@@ -66,5 +66,5 @@ fetch(urlMeme)
       console.log(data);
     }
     pullData();
-  });
+  
 
