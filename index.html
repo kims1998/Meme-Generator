@@ -11,17 +11,21 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="./assets//css/style.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <title>Dynamic Memes</title>
 
 </head>
 
 <header>
     <nav class="navbar navbar-light bg-light color-change">
-        <img src="./assets/images/520pxu.png" width="80" height="80"><span class="navbar-brand mb-0 h1 font-size">Dynamic M3mes</span>
+        <img src="./assets/images/520pxu.png" width="80" height="80"><span
+            class="navbar-brand mb-0 h1 font-size" id="project-title">Dynamic M3mes</span>
     </nav>
 </header>
 <div class="hero"></div>
+
 <body>
     <main id="grid-container">
         <section class="create">
@@ -36,7 +40,7 @@
             <input type="submit">
         </section>
         <section>
-            <div id="generated-photos"><img class src="" width="500" height="300" /> </div>
+            <div id="generated-photos"><img class src="" width="500" height="300" /></div>
         </section>
         <section id="generator">
             <h3>Here is the generated meme.</h3>
