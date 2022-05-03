@@ -30,6 +30,7 @@ randomize.addEventListener("click", function callImage() {
 });
 
 searchMeme.addEventListener("click", function () {
+  giphyDisplay.innerHTML = ` `;
   let searchQuery = document.querySelector(".texts").value;
   console.log(searchQuery, "search");
   let limit = 9;
@@ -49,9 +50,9 @@ searchMeme.addEventListener("click", function () {
       console.log(data, "GIFSITE")
       let gifImages = [];
       for (let i = 0; i < 9; i++) {
-        gifImages.push(data.data[i].url);     
+        gifImages.push(data.data[i].images.original.url); 
+        giphyDisplay.innerHTML += `<img src="${gifImages[i]}" id="nine-images"><br>`;    
       }
-      giphyDisplay.innerHTML += `<img src="${gifImages[0]}"><br>`;
       console.log(gifImages, "here");
     })
     .catch(console.err);
