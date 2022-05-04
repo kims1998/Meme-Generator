@@ -39,6 +39,8 @@
     left: 150px;
     width: 500px;
     height: 350px;
+    margin-left: 80px;
+    margin-top: 40px
 }
 #random {
     position: relative;
