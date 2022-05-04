@@ -27,50 +27,43 @@
     text-shadow: 0 0 3px #0084ffda, 0 0 5px #09ff00;
 }
 
-/* section {
-  width: 300px;
-  border: 5px solid rgb(252, 163, 17);
-  background-color: rgb(20, 33, 61);
-  padding: 50px;
-  margin: 20px;
-  color: rgb(229, 229, 229);
-} */
-
-#grid-container {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 50% 50%;
-}
-.create {
-    grid-column-start: 2;
-    margin-right: 100px;
-   margin-top: 150px;
+/* .create {
+    margin: 100px;
+    position: relative;
+    top: 20px;
     text-shadow: 0 0 3px #e43636da, 0 0 5px #ff5e00;
 }
-#generator {
-    display: grid;
-    grid-column-start: 3;
-    grid-row-start: 2;
+.generator {
+    position: relative;
+    top: 10px;
+    left: 150px;
     width: 500px;
     height: 350px;
-    margin-left: 80px;
-    margin-top: 40px
+}
+#random {
+    position: relative;
+    left: 50px;
+    bottom: 25px;
+    width: 500px;
+    height: 350px;
+} */
+
+.nine-images {
+    height: 10rem;
+    width: 10rem;
 }
 
-#random {
-    display: grid;
-    margin-left: 80px;
-    margin-top: 34px;
-    grid-column-start: 3;
-    grid-row-start: 1;
-    width: 500px;
-    height: 350px;
+.searchable {
+    margin-top: 5rem;
+    margin-left: 5rem;
 }
+
+.randomized {
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+
 .meme {
-    grid-column-start: 2;
-    grid-row-start: 2;
-    display: grid;
-    margin-top: 120px;
     text-shadow: 0 0 3px #e43636da, 0 0 5px #ff5e00;
 }
 .button {
@@ -81,11 +74,9 @@
 }
 #random-btn {
     background-image: linear-gradient(315deg, #0051ff 0%, #00f30c 74%);
+    margin-top: 5rem;
     margin-left: 20px;
-    padding: 10px;
-    position: absolute;
-    bottom: 200px;
-    left: 42%
+    padding: 0.5em;
 }
 #random-btn:hover {
     background-image: linear-gradient(315deg, #0084ffbb 0%, #1cf30086 74%);
@@ -102,4 +93,8 @@
 #nine-images {
     max-width: 200px;
     max-height: 200px;
+}
+
+.card {
+    width: 38rem;
 }

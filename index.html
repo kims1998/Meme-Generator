@@ -27,33 +27,41 @@
 <div class="hero"></div>
 
 <body>
-    <main id="grid-container">
-        <section class="create">
-            <div class="text-selection-box"></div>
-            <h2>Search up a meme</h2>
+    <main class="flex-column col-12 justify-content-center align-items-center" id="grid-container w-100%">
+    <div class="searchable row justify-content-center">
+        <section class="meme col-5 p-3">
+            <h2>Search Memes</h2>
             <input type="text" class="texts" placeholder="Search . .">
-            <input type="submit" class="button">
-            <div class="preview-image"></div>
+            <input type="submit" class="button" id="search-meme">
         </section>
-        <section>
-            <button id="random-btn">Generate Random</button>
-        </section>
-        <section id="random">
+        <section class="meme-search col-7" id="random">
             <div class="card shadow m-3">
-            <div class="card-body"></div>
-        </section> 
-        <section class="meme">   
-            <h3>Create your own Meme</h3>
-            <input type="text" class="texts" placeholder="Add your quote . .">
-            <input type="submit" class="button">     
+            <div class="card-body flex row justify-content-center" id="giphy-display">
+            </div>
+            </div>
         </section>
-        <section id="generator">
-            <div class="card shadow m-3"></div>
-              <div class="card-body"></div>
-        </section>       
+    </div>
+
+    <div class="randomized row justify-content-center">
+        <section class="meme col-5">
+            <div class="create-your-own">
+            <h2>Create your own Meme</h2>
+            <input type="text" class="texts" placeholder="Add your quote . .">
+            <input type="submit" class="button">
+            </div>
+            <div class="generate">
+            <button id="random-btn">Generate Random</button>
+            </div>
+        </section>
+        <section class="meme-search col-7" id="generator">
+            <div class="card shadow m-3">
+                <div class="card-body" id="image-display"></div>
+            </div>
+        </section> 
+    </div> 
     </main>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
 
 </html>

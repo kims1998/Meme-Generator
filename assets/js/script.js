@@ -51,7 +51,9 @@ searchMeme.addEventListener("click", function () {
       let gifImages = [];
       for (let i = 0; i < 9; i++) {
         gifImages.push(data.data[i].images.original.url); 
-        giphyDisplay.innerHTML += `<img src="${gifImages[i]}" id="nine-images"><br>`;    
+        giphyDisplay.innerHTML += `<img src
+        
+        ="${gifImages[i]}" class="nine-images"><br>`;    
       }
       console.log(gifImages, "here");
     })
