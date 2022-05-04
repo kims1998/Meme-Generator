@@ -97,4 +97,33 @@
 
 .card {
     width: 38rem;
+    position: relative;
 }
+
+.top {
+position: absolute;
+top: 8px;
+color: white;
+font-size: 2em;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.bottom {
+position: absolute;
+top: 80%;
+color: white;
+font-size: 2em;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Code for moving the text */
+  #draggable-element {
+    width: 100px;
+    height: 10px;
+    background-color: #fff;
+    color: black;
+    padding: 10px 12px;
+    cursor: move;
+    position: absolute;
+    /* important (all position that's not `static`) */
+  }
