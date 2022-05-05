@@ -39,6 +39,8 @@
     left: 150px;
     width: 500px;
     height: 350px;
+    margin-left: 80px;
+    margin-top: 40px
 }
 #random {
     position: relative;
@@ -72,13 +74,13 @@
 .button:hover {
     background-image: linear-gradient(315deg, #f5d22081 0%, #f537038e 74%);
 }
-#random-btn {
+.random-btn {
     background-image: linear-gradient(315deg, #0051ff 0%, #00f30c 74%);
     margin-top: 5rem;
     margin-left: 20px;
     padding: 0.5em;
 }
-#random-btn:hover {
+.random-btn:hover {
     background-image: linear-gradient(315deg, #0084ffbb 0%, #1cf30086 74%);
 }
 .texts {
@@ -97,4 +99,38 @@
 
 .card {
     width: 38rem;
+    position: relative;
+}
+
+.top {
+position: absolute;
+top: 8px;
+color: white;
+font-size: 2em;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.bottom {
+position: absolute;
+top: 80%;
+color: white;
+font-size: 2em;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Code for moving the text */
+  #draggable-element {
+    width: 100px;
+    height: 10px;
+    background-color: #fff;
+    color: black;
+    padding: 10px 12px;
+    cursor: move;
+    position: absolute;
+    /* important (all position that's not `static`) */
+  }
+
+#myImg {
+    width: 100%;
+    height: 100%;
 }
