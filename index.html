@@ -45,7 +45,7 @@
         <div class="randomized row justify-content-center">
             <section class="meme col-5">
                 <div class="create-your-own">
-                    <h2>Create your own Meme</h2>
+                    <h2>Create Your Text</h2>
                     <input type="text" class="texts" id="value" placeholder="Add your quote . .">
                     <input type="submit" class="button" id="submit-text">
                     <fieldset>
@@ -56,12 +56,15 @@
                     </fieldset>
                 </div>
                 <div class="generate">
-                    <button id="random-btn">Generate Random Image</button>
+                    <button class="random-btn" id="random-btn">Generate Random Image</button><br>
+                    <input class="random-btn" type="button" id="loadFileXml" value="Upload Your Own Image" onclick="document.getElementById('file').click();" />
+                    <input type="file" style="display:none;" id="file" name="file"/>
                 </div>
             </section>
             <section class="meme-search col-7" id="generator">
                 <div class="card justify-content-center shadow m-3">
                     <div class="card-body" id="image-display"></div>
+                    <img id="myImg" src="#" alt="Display Uploaded Image">
                     <div class="top moveable"></div>
                     <div class="bottom moveable"></div>
                 </div>

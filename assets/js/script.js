@@ -83,7 +83,6 @@ for(i = 0; i < ele.length; i++) {
 })
 
 // Code to move text moveable
-
 let selected = null, // Object of the element to be moved
   x_pos = 0,
   y_pos = 0, // Stores x & y coordinates of the mouse pointer
@@ -121,6 +120,21 @@ document.querySelector(".moveable").onmousedown = function() {
 
 document.onmousemove = _move_elem;
 document.onmouseup = _destroy;
+
+// Upload Your Own Image Functionality
+window.addEventListener('load', function() {
+  document.querySelector('input[type="file"]').addEventListener('change', function() {
+    imageDisplay.innerHTML = "";
+      if (this.files && this.files[0]) {
+          let img = document.querySelector('#myImg');
+          img.onload = () => {
+              URL.revokeObjectURL(img.src);  // no longer needed, free memory
+          }
+
+          img.src = URL.createObjectURL(this.files[0]); // set src to blob url
+      }
+  });
+});
 
 
 
