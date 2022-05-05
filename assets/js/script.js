@@ -62,6 +62,40 @@ searchMeme.addEventListener("click", function () {
   // generateSelection();
 });
 
+//function addMeme(meme){
+//  var meme= JSON.parse(localStorage.getItem('memes'))
+//  if (meme == undefined) {
+//      localStorage.setItem('memes',JSON.stringify([meme]))
+  
+//  } else {
+//      meme.push(meme)
+//      localStorage.setItem('memes',JSON.stringify(meme))
+//  }
+ 
+//  displaySearch();
+
+var text = searchMeme.value;
+var blankArray = []
+blankArray.push(text)
+// Put the object into storage
+localStorage.setItem('testObject', JSON.stringify(blankArray));
+
+// Retrieve the object from storage
+var retrievedObject = JSON.parse(localStorage.getItem('testObject'));
+
+// console.log('retrievedObject: ', JSON.parse(retrievedObject));
+
+// function createItem() {
+// 	localStorage.setItem('nameOfItem', 'value'); 
+// } 
+// createItem() // Creates a item named 'nameOfItem' and stores a value of 'value'
+
+// function getValue() {
+// 	return localStorage.getItem('nameOfItem');  
+// } // Gets the value of 'nameOfItem' and returns it
+// console.log(getValue()); //'value';
+
+
 let inputTextBox = document.querySelector("#value")
 let submitText = document.querySelector("#submit-text")
 let topText = document.querySelector(".top")
@@ -139,7 +173,5 @@ window.addEventListener('load', function() {
 
 
 
-
-    
 
 
