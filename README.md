@@ -1,38 +1,19 @@
 # Meme-Generator
+Description:
+Our team developed a unique Meme/GIF generator that not only allows the user to view hilarious images, but additionally allows them to incorporate their own ideas into the meme. Clients may choose to either upload their own images or generate a random meme, furthermore they can create their own dialogue that can be dragged within the meme to the preferred location.
+Our teams inspiration was to allow for a more interactive site that allows users to create more relatable content that can be shared with friends and family.
 
-BRAINSTORM:
+Link to site:
 
-button thats "press for meme or surprise"
+![splash-page](./assets/images/127.0.0.1_5501_index.html%20(1).png)
 
-above that would display the meme
-
-which then would show another button that says "another?"
-next/previous
-
-
-IE:
-input: cat
-3x3 grid showing memes with cats 
-
-
-TODO:
-figure out if diego is alive, allegedly
-hearsay
-
-
-inputs:
-search bar for picture
-
-
-maybe:
-jumpscare
-
-// Javascript - Everyone else
-// CSS - Diego / Shogoofa
-// 
-
-
-API's:
+API's Used:
 https://imgflip.com/api
 https://mememaker.github.io/API/
 
+Contributors:
+Kims1998
+joshjankowski
+tderraco
+diegodominguez-jpg
+ShogoofaA
