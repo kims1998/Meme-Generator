@@ -27,28 +27,13 @@
     text-shadow: 0 0 3px #0084ffda, 0 0 5px #09ff00;
 }
 
-/* .create {
-    margin: 100px;
-    position: relative;
-    top: 20px;
-    text-shadow: 0 0 3px #e43636da, 0 0 5px #ff5e00;
+.create-your-own {
+    margin-top: 3rem;;
 }
-.generator {
-    position: relative;
-    top: 10px;
-    left: 150px;
-    width: 500px;
-    height: 350px;
-    margin-left: 80px;
-    margin-top: 40px
+
+.final {
+    margin-left: 30%
 }
-#random {
-    position: relative;
-    left: 50px;
-    bottom: 25px;
-    width: 500px;
-    height: 350px;
-} */
 
 .nine-images {
     height: 10rem;
@@ -76,7 +61,7 @@
 }
 .random-btn {
     background-image: linear-gradient(315deg, #0051ff 0%, #00f30c 74%);
-    margin-top: 5rem;
+    margin-top: 1.5rem;
     margin-left: 20px;
     padding: 0.5em;
 }
@@ -98,8 +83,9 @@
 }
 
 .card {
-    width: 38rem;
+    width: 40rem;
     position: relative;
+    background-color: rgb(255, 255, 255, 0)
 }
 
 .top {
@@ -112,7 +98,11 @@ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
 .bottom {
 position: absolute;
-top: 80%;
+margin: auto;
+width: 50%;
+left: 45%;
+padding: 10px;
+/* top: 80%; */
 color: white;
 font-size: 2em;
 text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -133,4 +123,16 @@ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 #myImg {
     width: 100%;
     height: 100%;
+}
+
+.none {
+    display: none;
+}
+
+.center {
+    margin-left: 40%;
+}
+
+canvas {
+    background: white;
 }

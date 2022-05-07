@@ -7,6 +7,9 @@ let randomize = document.querySelector("#random-btn");
 let getImagesIndex = "";
 let eachContainer = "";
 let searchMeme = document.querySelector("#search-meme");
+let img = document.querySelector('#myImg');
+let file = document.querySelector('#file');
+let remove = document.querySelector('#remove-text');
 
 function randomizeImage() {
   fetch(url)
@@ -15,6 +18,7 @@ function randomizeImage() {
       return response.json();
     })
     .then((data) => {
+      img.setAttribute("class", "none")
       let getImagesIndex = Math.floor(Math.random() * data.data.memes.length);
       let randomImage = [];
       randomImage.push(data.data.memes[getImagesIndex].url);
@@ -102,6 +106,11 @@ let topText = document.querySelector(".top")
 let bottomText = document.querySelector(".bottom")
 var ele = document.getElementsByName('text');
 
+remove.addEventListener("click", function(){
+  topText.textContent = "";
+  bottomText.textContent = "";
+})
+
 submitText.addEventListener("click", function(){
 let inPutText = inputTextBox.value;
 for(i = 0; i < ele.length; i++) {
@@ -161,6 +170,7 @@ window.addEventListener('load', function() {
     imageDisplay.innerHTML = "";
       if (this.files && this.files[0]) {
           let img = document.querySelector('#myImg');
+          img.removeAttribute("class")
           img.onload = () => {
               URL.revokeObjectURL(img.src);  // no longer needed, free memory
           }
@@ -169,9 +179,5 @@ window.addEventListener('load', function() {
       }
   });
 });
-
-
-
-
 
 
