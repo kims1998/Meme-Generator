@@ -31,10 +31,6 @@
     margin-top: 3rem;;
 }
 
-.final {
-    margin-left: 30%
-}
-
 .nine-images {
     height: 10rem;
     width: 10rem;
@@ -135,4 +131,8 @@ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
 canvas {
     background: white;
+}
+
+.final {
+    margin-left: 50px;
 }
